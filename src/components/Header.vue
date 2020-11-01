@@ -67,12 +67,14 @@
           rounded="xl"
           max-width="170px"
           max-height="45px"
-          class="text-center d-flex align-center"
+          class="text-center d-flex align-center card-wpp"
           color="green"
         >
           <v-card-text>
-            <v-icon>mdi-whatsapp</v-icon>
+            <a href="https://api.whatsapp.com/send?l=pt&phone=5513972449999">
+              <v-icon>mdi-whatsapp</v-icon>
             13 97244.9999
+            </a>
           </v-card-text>
         </v-card>
       </v-col>
@@ -112,6 +114,16 @@ export default {
         .v-card__text {
           font-weight: 800;
         }
+      }
+    }
+    .card-wpp {
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        text-decoration: none;
+        color: black;
       }
     }
   }
