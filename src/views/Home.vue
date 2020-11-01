@@ -129,9 +129,7 @@
       </v-col>
     </v-row>
 
-    <v-row class="contact text-center">
-      <Contact />
-    </v-row>
+    <Contact />
 
     <v-row class="blog text-center">
       <v-col cols="12" sm="12" md="12" class="d-flex justify-center blog-title">
@@ -195,7 +193,7 @@
 
 <script>
 import Carousel from "@/components/Carousel.vue";
-import Contact from "@/components/FaleConosco.vue"
+import Contact from "@/components/FaleConosco.vue";
 
 export default {
   name: "Home",
