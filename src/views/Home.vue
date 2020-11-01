@@ -11,7 +11,7 @@
       <v-col class="d-flex justify-center" cols="12" sm="12" md="12">
         <h1>A Haverin</h1>
       </v-col>
-      <v-col cols="12" md="5">
+      <v-col class="pa-3" cols="12" md="5">
         <v-img src="@/assets/img/equipeHaverim.png"></v-img>
       </v-col>
       <v-col cols="12" md="6" class="pa-10">
@@ -180,7 +180,12 @@
         class="justify-space-around text-center blog-info"
         no-gutters
       >
-        <v-col cols="12" sm="7" md="4" class="d-flex flex-column align-center">
+        <v-col
+          cols="12"
+          sm="5"
+          md="4"
+          class="d-flex flex-column align-center ma-2"
+        >
           <img width="80%" src="@/assets/img/blog-img.png" alt="" />
 
           <h2>Saúde Cognitiva</h2>
@@ -193,7 +198,7 @@
             influencia o cérebro e cognição são aspectos que podem ajudar.
           </p>
         </v-col>
-        <v-col cols="12" sm="7" md="4" class="d-flex flex-column align-center">
+        <v-col cols="12" sm="5" md="4" class="d-flex flex-column align-center">
           <img width="80%" src="@/assets/img/blog-img.png" alt="" />
 
           <h2>Saúde Cognitiva</h2>
@@ -210,7 +215,7 @@
     </v-row>
 
     <v-row class="map text-center">
-      <v-img src="@/assets/img/map.png">
+      <v-img max-width="100%" src="@/assets/img/map.png">
         <v-row class="flex-column " align="center" justify="center" no-gutters>
           <h2>
             Atuamos em toda a Baixada Santista,<br />
@@ -313,11 +318,6 @@ export default {
       }
     }
     .blog-info {
-      img::before {
-        width: 30%;
-        height: 50%;
-        background-color: rgb(255, 136, 28);
-      }
       h2 {
         font-size: 26px;
         color: rgb(165, 165, 165);
@@ -325,6 +325,9 @@ export default {
       p {
         font-size: 16px;
         color: rgb(165, 165, 165);
+      }
+      .col-12 {
+        max-width: 90%;
       }
     }
   }

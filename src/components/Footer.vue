@@ -6,7 +6,7 @@
           <v-img src="@/assets/img/logo.png"></v-img>
         </div>
       </v-col>
-      <v-col class="pa-8" cols="12" md="12">
+      <v-col class="pa-8 col-branca" cols="12" md="12">
         <v-row no-gutters>
           <v-col cols="12" md="4">
             <v-icon size="60px" class="mb-10" color="rgb(255, 136, 28)">
@@ -43,7 +43,33 @@
         </v-row>
       </v-col>
       <v-col cols="12" md="12">
-        <h1>3</h1>
+        <v-row align="center" no-gutters>
+          <v-col class="mt-2 d-flex justify-center" cols="12" md="4">
+            <p>2018 - Haverim - Todos os direitos reservados.</p>
+          </v-col>
+          <v-col class="d-flex justify-center" cols="12" md="4">
+            <v-img max-width="30%" src="@/assets/img/logo-marca-site.png"></v-img>
+          </v-col>
+          <v-col class="d-flex flex-column col-menu" cols="12" md="4">
+            <v-list class="d-flex menu-footer">
+              <v-list-item @click="() => {}">
+                <router-link to="/">Home</router-link>
+              </v-list-item>
+              <v-list-item @click="() => {}">
+                <router-link to="/about">O Grupo</router-link>
+              </v-list-item>
+              <v-list-item @click="() => {}">
+                <router-link to="/atuacao">Atuação</router-link>
+              </v-list-item>
+              <v-list-item @click="() => {}">
+                <router-link to="/produtos">Produtos</router-link>
+              </v-list-item>
+              <v-list-item @click="() => {}">
+                <router-link to="/contato">Contato</router-link>
+              </v-list-item>
+            </v-list>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </footer>
@@ -64,20 +90,28 @@ footer {
         margin: 20px;
       }
     }
-    .col-12:nth-child(2) {
+    .col-branca {
       background-color: #f0f0f0;
-      p {
+    }
+    p {
         line-height: 10px;
       }
-      a {
+    a {
         text-decoration: none;
         color: black;
       }
-      a:hover {
+    a:hover {
         text-decoration: none;
         color: black;
         font-weight: 750;
       }
+    .menu-footer {
+        a {
+            font-size: 10px;
+        }
+        .col-menu {
+            align-items: initial;
+        }
     }
   }
 }
