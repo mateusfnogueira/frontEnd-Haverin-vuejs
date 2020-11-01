@@ -29,10 +29,11 @@
       </v-carousel-item>
     </v-carousel>
     <v-row no-gutters align="center" justify="center">
-      <v-card class="d-flex card-services" width="70%">
+      <v-card v-if="!isMobile()" class="d-flex card-services" width="70%">
         <v-col
           class="d-flex flex-column align-start justify-start"
           cols="12"
+          sm="1"
           md="3"
         >
           <v-icon size="40px" color="black">mdi-needle</v-icon>
@@ -44,6 +45,7 @@
         <v-col
           class="d-flex flex-column align-start justify-start"
           cols="12"
+          sm="1"
           md="3"
         >
           <v-icon size="40px" color="black">mdi-run</v-icon>
@@ -53,6 +55,7 @@
         <v-col
           class="d-flex flex-column align-start justify-start"
           cols="12"
+          sm="1"
           md="3"
         >
           <v-icon size="40px" color="black">mdi-heart-pulse</v-icon>
@@ -62,6 +65,7 @@
         <v-col
           class="d-flex flex-column align-start justify-start"
           cols="12"
+          sm="1"
           md="3"
         >
           <v-icon size="40px" color="black">mdi-atom</v-icon>
@@ -76,7 +80,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    isMobile() {
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
+};
 </script>
 
 <style lang="scss">
