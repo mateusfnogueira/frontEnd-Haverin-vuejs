@@ -211,13 +211,13 @@
 
     <v-row class="map text-center">
       <v-img src="@/assets/img/map.png">
-        <v-row class="flex-column " align="center" justify="end" no-gutters>
+        <v-row class="flex-column " align="center" justify="center" no-gutters>
           <h2>
             Atuamos em toda a Baixada Santista,<br />
             Vale do Ribeira e Litoral Norte.
           </h2>
           <p>200 km dentro do Estado de São Paulo</p>
-          <v-btn outlined rounded color="white">
+          <v-btn outlined rounded="xl" color="white">
             SAIBA MAIS
           </v-btn>
         </v-row>
@@ -332,13 +332,17 @@ export default {
     margin-top: 130px;
     .v-image {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       .v-responsive__content {
         h2 {
           color: white;
         }
         p {
           color: white;
+        }
+        .v-btn:hover {
+          color: black !important;
+          background-color: rgba(241, 241, 241, 0.445);
         }
       }
     }

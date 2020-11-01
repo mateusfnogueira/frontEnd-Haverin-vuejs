@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <header class="header">
     <v-app-bar flat color="white">
       <v-menu v-if="isMobile()" left bottom>
         <template v-slot:activator="{ on, attrs }">
@@ -29,7 +29,7 @@
 
       <v-col class="col-img" cols="12" sm="2" md="3">
         <v-img
-          src="../assets/img/logo.png"
+          src="@/assets/img/logo.png"
           contain
           max-width="130px"
           aspect-ratio="1"
@@ -77,7 +77,7 @@
         </v-card>
       </v-col>
     </v-app-bar>
-  </div>
+  </header>
 </template>
 
 <script>

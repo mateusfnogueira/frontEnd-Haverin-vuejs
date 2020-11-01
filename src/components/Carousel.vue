@@ -1,6 +1,6 @@
 <template>
   <v-row no-gutters>
-    <v-carousel hide-delimiters>
+    <v-carousel cycle hide-delimiters>
       <v-carousel-item src="@/assets/img/bg-familia-wide.png">
         <v-row class="fill-height" align="center" justify="center">
           <div
@@ -104,7 +104,7 @@ export default {
       .carousel-text {
         .carousel-btn:hover {
           color: black;
-          background-color: white;
+          background-color:rgba(241, 241, 241, 0.445);
         }
       }
     }
